@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Parallel Tests Suite]" parallel="tests">
+  <test name="Search Product Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.napa.online.testcases.LoginTest">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.napa.online.testcases.LoginTest -->
+      <class name="com.napa.online.testcases.SearchProductTest">
+        <methods>
+          <include name="quit"/>
+          <include name="testSearchProduct" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.napa.online.testcases.SearchProductTest -->
+    </classes>
+  </test> <!-- Search Product Test(failed) -->
+  <test name="Login Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.napa.online.testcases.LoginTest">
+        <methods>
+          <include name="doLogin" invocation-numbers="0 1"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.napa.online.testcases.LoginTest -->
+      <class name="com.napa.online.testcases.SearchProductTest">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.napa.online.testcases.SearchProductTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [Parallel Tests Suite] -->

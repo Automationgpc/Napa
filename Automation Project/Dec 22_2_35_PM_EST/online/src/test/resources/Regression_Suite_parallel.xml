@@ -1,0 +1,11 @@
+<suite name="Regression Suite-Parallel Execution" parallel="classes" threads="4">
+<parameter name="browser" value="Chrome" />>
+  <test name="Regression Parallel" preserve-order="true">
+    <classes>
+      <class name="com.napa.online.testcases.LoginTest"/>
+      <class name="com.napa.online.testcases.SearchProductTest"/>      
+      <!--  -->class name="com.napa.online.testcases.GuestUserROLTest"/>
+      
+    </classes>
+  </test>
+</suite>

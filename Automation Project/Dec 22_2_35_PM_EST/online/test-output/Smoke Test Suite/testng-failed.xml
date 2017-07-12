@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Test Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="platform" value="Windows"/>
+  <test name="SmokeTest(failed)">
+    <classes>
+      <class name="com.napa.online.testcases.LoginTest">
+        <methods>
+          <include name="setupBeforeSuite"/>
+          <include name="doLogin" invocation-numbers="1"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.napa.online.testcases.LoginTest -->
+      <class name="com.napa.online.testcases.SearchProductTest">
+        <methods>
+          <include name="setupBeforeSuite"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.napa.online.testcases.SearchProductTest -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [Smoke Test Suite] -->

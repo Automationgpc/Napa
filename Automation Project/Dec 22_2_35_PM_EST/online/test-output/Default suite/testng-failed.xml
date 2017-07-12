@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.napa.online.testcases.GuestUserROLTest">
+        <methods>
+          <include name="setupBeforeSuite"/>
+          <include name="Guest_Select_Part_MMTE_Veh_Store_Header_ROL_Order" invocation-numbers="0"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.napa.online.testcases.GuestUserROLTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

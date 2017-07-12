@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional Test Suite]">
+  <parameter name="platform" value="Windows"/>
+  <parameter name="browser" value="Chrome"/>
+  <test name="Guest ROL Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.napa.online.testcases.LoginTest">
+        <methods>
+          <include name="setupBeforeSuite"/>
+          <include name="quit"/>
+          <include name="doLogin" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.napa.online.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Guest ROL Test(failed) -->
+</suite> <!-- Failed suite [Functional Test Suite] -->

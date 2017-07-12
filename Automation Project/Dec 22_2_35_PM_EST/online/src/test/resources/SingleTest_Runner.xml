@@ -1,0 +1,20 @@
+<suite name="Regression Test Suite">
+
+	<parameter name="platform" value="Windows" />
+	<parameter name="browser" value="Chrome" />
+	<test name="RegisteredCartMergeROLTest" preserve-order="true" allow-return-values="true">
+		<classes>	
+			<!--  -->class name="com.napa.online.testcases.SearchProductTest"/> 		
+			<!--  -->class name="com.napa.online.testcases.GuestUserROLTest" />
+			<!--  -->class name="com.napa.online.testcases.RegisteredCartMergeROLTest" />			
+			<!--  -->class name="com.napa.online.testcases.RegMultiQtySingleItemROLTest" />
+			<!--  -->class name="com.napa.online.testcases.RegSingleQtySingleItemBOLTest" />			
+			<!--  -->class name="com.napa.online.testcases.GuestSelectVinMultiQtyMultiStrROLTest" />
+			<!--  -->class name="com.napa.online.testcases.RegKeySearchToolsEqMultItemMultiStrROLTest"/> 
+			<class name="com.napa.online.testcases.HTTPResponseCodeTest" />
+		</classes>
+	</test>	
+
+
+</suite>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Single Test Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="platform" value="Windows"/>
+  <test name="RegMultiQtySingleItemROLTest(failed)">
+    <classes>
+      <class name="com.napa.online.testcases.RegSingleQtySingleItemBOLTest">
+        <methods>
+          <include name="quit"/>
+          <include name="Reg_Single_Qty_Single_Item_BOL_Order" invocation-numbers="0"/>
+          <include name="setupBeforeSuite"/>
+        </methods>
+      </class> <!-- com.napa.online.testcases.RegSingleQtySingleItemBOLTest -->
+    </classes>
+  </test> <!-- RegMultiQtySingleItemROLTest(failed) -->
+</suite> <!-- Failed suite [Single Test Suite] -->

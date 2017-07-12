@@ -1,0 +1,14 @@
+<suite name="Parallel Tests Suite" parallel="tests" thread-count="4">
+	<test name="Search Product Test" >
+		<classes>
+			<class name="com.napa.online.testcases.SearchProductTest" />
+		</classes>
+	</test>
+	<test name="Login Test" allow-return-values="true">
+		<classes>
+			<class name="com.napa.online.testcases.LoginTest" />
+		</classes>
+	</test>
+	
+</suite>
+

@@ -1,0 +1,226 @@
+<html>
+<head>
+<title>TestNG:  RegMultiQtySingleItemROLTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RegMultiQtySingleItemROLTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/2</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 04 11:55:04 EST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1131 seconds (1131377 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.napa.online.testcases.RegSingleQtySingleItemBOLTest.Reg_Single_Qty_Single_Item_BOL_Order()'><b>Reg_Single_Qty_Single_Item_BOL_Order</b><br>Test class: com.napa.online.testcases.RegSingleQtySingleItemBOLTest<br>Parameters: {Product Unit Price=, Product Discount=, Browser=IE, VehicleMake=Honda, ProductKey=wiper blade, StoreZip=30066, Product Qty=, TestDesc=Registered user-global search bar for a selected vehicle and place a Single qty single item BOL order, Test Result=, BOL Order Subtotal=, ROL Order Subtotal=, PricePDP=, Fitment Confirmed=, ProductNamePDP=, VehicleYear=2015, Product1 Subtotal=, You Saved=, Product Total=, Runmode=Yes, ProductPartNumber=WIP 602443, ProductQty=1, PartNumberPDP=, Product Core Price=, Product Fulfilment=, VehicleModel=CR-V, Product PartNumber=, Product Store=, Order Subtotal=, Product Name=, StoreAddress=2745 Sandy Plains Rd}</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.napa.online.pages.BuyOnlineAtcPage.clickAddToCart(BuyOnlineAtcPage.java:54)
+	at com.napa.online.testcases.RegSingleQtySingleItemBOLTest.Reg_Single_Qty_Single_Item_BOL_Order(RegSingleQtySingleItemBOLTest.java:283)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1091781053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1091781053'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at com.napa.online.pages.BuyOnlineAtcPage.clickAddToCart(BuyOnlineAtcPage.java:54)
+	at com.napa.online.testcases.RegSingleQtySingleItemBOLTest.Reg_Single_Qty_Single_Item_BOL_Order(RegSingleQtySingleItemBOLTest.java:283)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>112</td>
+<td>com.napa.online.testcases.RegSingleQtySingleItemBOLTest@10e41621</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.napa.online.testcases.RegisteredCartMergeROLTest.Guest_Cart_Merge_ROL_Order()'><b>Guest_Cart_Merge_ROL_Order</b><br>Test class: com.napa.online.testcases.RegisteredCartMergeROLTest<br>Parameters: {Product1 Discount=, Product2  Subtotal=, Product1 Qty=, Product1 Unit Price=, TestDesc=Registered customer, global search bar for all products, cart merge and place a multi qty single item ROL order, Product2  Unit Price=, Product2 Discount=, Product1 Subtotal=, Product2 Total=, Product1 Total=, Product2Name=, Product2  Qty=, Product1 Name=, Product2 PartNumber=, Product2 Fulfilment=, Tax=, VehicleYear=2016, Product2Qty=1, Pickup Location=, Product1 Core Price=, Product2PartNumber=LMP 7443, Product2 Subtotal=, OrderNumber=, StoreZip=30066, Pickup Person=, Product1Name=, ROL Order Subtotal=, Product2 Unit Price=, Product2=taillight bulb, Product1=TS TS8331AX, StoreAddress=2745 Sandy Plains Rd, Runmode=Yes, Test Result=, Product2 Store=, Product1 Store=, VehicleModel=Camry, Product2 Qty=, Product1 PartNumber=, VehicleMake=Toyota, Product2  PartNumber=, Product1 Fulfilment=, You Saved=, Product2 Name=, Fulfillment Type=, Final Order Total=, Product2 Core Price=, Product1PartNumber=, Product1Qty=1, Browser=IE}</td>
+<td></td>
+<td>453</td>
+<td>com.napa.online.testcases.RegisteredCartMergeROLTest@4b0b0854</td></tr>
+<tr>
+<td title='com.napa.online.testcases.GuestUserROLTest.Guest_Select_Part_MMTE_Veh_Store_Header_ROL_Order()'><b>Guest_Select_Part_MMTE_Veh_Store_Header_ROL_Order</b><br>Test class: com.napa.online.testcases.GuestUserROLTest<br>Parameters: {TestDesc=Guest customer- select part through megamenu-Tools&Equipment-selects vehicle and store from header and place a ROL order , Store Address=, Buying Option=, Before Price=, Part Number=, Core Price=, ProductNamePLP=, Tax=, Total=, ProductNamePU=, Price=, VehicleYear=2016, Pickup Location=, OrderNumber=, StoreZip=30066, Qty=, ProductName=, Pickup Person=, BOL Order Subtotal=, ROL Order Subtotal=, PartNumber=, ProductNameCart=, StoreAddress=2745 Sandy Plains Rd, Runmode=Yes, Test Result=, VehicleModel=Focus, Discount=, Order Final Total=, VehicleMake=Ford, Order Subtotal=, You Saved=, Fulfillment Type=, Unit Price=, Quantity=, Subtotal=, Browser=IE}</td>
+<td></td>
+<td>224</td>
+<td>com.napa.online.testcases.GuestUserROLTest@e056f20</td></tr>
+<tr>
+<td title='com.napa.online.testcases.RegMultiQtySingleItemROLTest.Reg_Multi_Qty_Single_Item_ROL_Order()'><b>Reg_Multi_Qty_Single_Item_ROL_Order</b><br>Test class: com.napa.online.testcases.RegMultiQtySingleItemROLTest<br>Parameters: {Product Qty=, ProductPartNumber=WIP 600122, TestDesc=Registered user-global search bar for a selected vehicle and place a multi qty single item ROL order, ProductKey=wiper blade, Product Core Price=, Product Name=, Product1 Subtotal=, Core Price=, Part Number=, PartNumberPDP=, Total=, VehicleYear=2015, Pickup Location=, Product Discount=, OrderNumber=, StoreZip=30066, Fitment Confirmed=, Qty=, Product Total=, ProductQty=1, Pickup Person=, ProductName=, Product PartNumber=, BOL Order Subtotal=, ROL Order Subtotal=, Product Fulfilment=, StoreAddress=2745 Sandy Plains Rd, Runmode=Yes, Test Result=, VehicleModel=CR-V, Discount=, VehicleMake=Honda, Order Subtotal=, PricePDP=, You Saved=, Product Unit Price=, Fulfillment Type=, ProductNamePDP=, Unit Price=, Product Store=, Subtotal=, Browser=IE}</td>
+<td></td>
+<td>267</td>
+<td>com.napa.online.testcases.RegMultiQtySingleItemROLTest@19bb07ed</td></tr>
+<tr>
+<td title='com.napa.online.testcases.LoginTest.doLogin()'><b>doLogin</b><br>Test class: com.napa.online.testcases.LoginTest<br>Parameters: {UserFullName=Prabhakar  Automation, Username=prabhakar.automation@gmail.com, ExpectedResult=Successful, TestType=Positive, Password=napa@Auto77, Runmode=Yes, TestDesc=Login Test(Positive)-Valid User Name and Password, Browser=Chrome}</td>
+<td></td>
+<td>54</td>
+<td>com.napa.online.testcases.LoginTest@cd3fee8</td></tr>
+<tr>
+<td title='com.napa.online.testcases.SearchProductTest.testSearchProduct()'><b>testSearchProduct</b><br>Test class: com.napa.online.testcases.SearchProductTest<br>Parameters: {Product=Engine Oil, Runmode=Yes, TestDesc=Search Engine Oil Test, Browser=Firefox}</td>
+<td></td>
+<td>9</td>
+<td>com.napa.online.testcases.SearchProductTest@34b7ac2f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.napa.online.testcases.LoginTest.doLogin()'><b>doLogin</b><br>Test class: com.napa.online.testcases.LoginTest<br>Parameters: {UserFullName=, Username=chiduruppa@gmail.com, ExpectedResult=Unsuccessful, TestType=Negative, Password=abcdef, Runmode=No, TestDesc=Login Test(Negative)- Invalid Username & Password, Browser=Firefox}</td>
+<td><div><pre>org.testng.SkipException: Skipping the test as Runmode is No
+	at com.napa.online.testcases.LoginTest.doLogin(LoginTest.java:47)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1431710377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1431710377'><pre>org.testng.SkipException: Skipping the test as Runmode is No
+	at com.napa.online.testcases.LoginTest.doLogin(LoginTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.napa.online.testcases.LoginTest@cd3fee8</td></tr>
+<tr>
+<td title='com.napa.online.testcases.SearchProductTest.testSearchProduct()'><b>testSearchProduct</b><br>Test class: com.napa.online.testcases.SearchProductTest<br>Parameters: {Product=brake pads, Runmode=No, TestDesc=Search brake pads Test, Browser=IE}</td>
+<td><div><pre>org.testng.SkipException: Skipping the test as Runmode is No
+	at com.napa.online.testcases.SearchProductTest.testSearchProduct(SearchProductTest.java:44)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace727666004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace727666004'><pre>org.testng.SkipException: Skipping the test as Runmode is No
+	at com.napa.online.testcases.SearchProductTest.testSearchProduct(SearchProductTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.napa.online.testcases.SearchProductTest@34b7ac2f</td></tr>
+</table><p>
+</body>
+</html>

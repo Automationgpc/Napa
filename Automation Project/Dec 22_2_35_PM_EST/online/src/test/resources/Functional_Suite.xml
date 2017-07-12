@@ -1,0 +1,10 @@
+<suite name="Functional Test Suite">
+	<parameter name="platform" value="Windows" />
+	<parameter name="browser" value="Chrome" />
+		<test name="Guest ROL Test" parallel="tests" allow-return-values="true">
+			<classes>
+				<class name="com.napa.online.testcases.LoginTest" />
+			</classes>
+		</test>
+	
+</suite>

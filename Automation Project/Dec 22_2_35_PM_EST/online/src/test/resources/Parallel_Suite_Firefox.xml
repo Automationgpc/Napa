@@ -1,0 +1,24 @@
+<suite name="Parallel Test Suite2" parallel="tests" threads="4">
+	<parameter name="platform" value="Windows" />
+	<parameter name="browser" value="Mozilla" />
+	
+		<test name="Login Test" allow-return-values="true">		
+			<classes>
+				<class name="com.napa.online.testcases.LoginTest" />
+			</classes>
+		</test>
+		
+		<test name="Search Product Test" allow-return-values="true">		
+			<classes>
+				<class name="com.napa.online.testcases.SearchProductTest" />
+			</classes>
+		</test>
+		
+		<test name="Guest User ROL Test" allow-return-values="true">		
+			<classes>
+				<class name="com.napa.online.testcases.GuestUserROLTest" />
+			</classes>
+		</test>
+
+</suite>
+

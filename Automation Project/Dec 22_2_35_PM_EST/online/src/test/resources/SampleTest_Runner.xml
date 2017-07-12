@@ -1,0 +1,17 @@
+<suite name="Smoke Firefox Test Suite">
+
+	<parameter name="platform" value="Windows" />
+	<parameter name="browser" value="Chrome" />
+	<test name="RegressionTests" allow-return-values="true">
+		<classes>
+			<!--  -->class name="com.napa.online.testcases.LoginTest"/>
+      		<class name="com.napa.online.testcases.SearchProductTest"/>
+			<!--  -->class name="com.napa.online.testcases.GuestUserROLTest" />
+			<!--  -->class name="com.napa.online.testcases.RegisteredCartMergeROLTest" />			
+			<!--  -->class name="com.napa.online.testcases.RegMultiQtySingleItemROLTest" />
+			<!--  -->class name="com.napa.online.testcases.RegSingleQtySingleItemBOLTest" />
+		</classes>
+	</test>	
+
+
+</suite>

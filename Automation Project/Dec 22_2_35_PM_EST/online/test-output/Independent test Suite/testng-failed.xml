@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Independent test Suite]">
+  <test name="Independent test(failed)">
+    <classes>
+      <class name="com.napa.online.testcases.SearchProductTest">
+        <methods>
+          <include name="setupBeforeSuite"/>
+          <include name="quit"/>
+          <include name="testSearchProduct" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.napa.online.testcases.SearchProductTest -->
+    </classes>
+  </test> <!-- Independent test(failed) -->
+</suite> <!-- Failed suite [Independent test Suite] -->
